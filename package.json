@@ -1,0 +1,21 @@
+{
+  "dependencies": {},
+  "devDependencies": {
+    "@types/mocha": "^2.2.40",
+    "@types/power-assert": "^1.4.29",
+    "espower-typescript": "^8.0.0",
+    "mocha": "^3.2.0",
+    "power-assert": "^1.4.2",
+    "tslint": "^5.0.0",
+    "typescript": "2.3.2",
+    "yarn": "^0.23.4"
+  },
+  "directories": {
+    "test": "mocha/"
+  },
+  "scripts": {
+    "mocha": "mocha --compilers ts:espower-typescript/guess 'mocha/**/*.ts'",
+    "test": "yarn run mocha",
+    "lint": "tslint '**/*.ts' --exclude 'node_modules/**' -t verbose"
+  }
+}
